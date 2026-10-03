@@ -1,0 +1,16 @@
+[project]
+name = "course-document-vector-ingest"
+version = "0.1.0"
+description = "Parse course PDFs and ingest deadline-aware learning chunks into a vector collection."
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.0.0",
+  "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

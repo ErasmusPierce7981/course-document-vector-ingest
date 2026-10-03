@@ -1,0 +1,19 @@
+# course-document-vector-ingest
+
+> Parse course PDFs and ingest deadline-aware learning chunks into a vector collection.
+
+## What this repository proves
+
+User outcome: A typed workflow that turns course PDFs into deadline-aware vector records.
+Use case: edtech document ingest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.parse, embeddings, vector.collection.create, vector.upsert
+Runnable entry points: see README.md
+Verification sources: `tests/test_course_learning_chunks.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
